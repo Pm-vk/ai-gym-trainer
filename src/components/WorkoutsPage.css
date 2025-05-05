@@ -1,0 +1,15 @@
+.workouts-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
+  .workout-section {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  

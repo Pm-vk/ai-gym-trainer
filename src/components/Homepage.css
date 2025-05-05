@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Raleway:wght@300;700&display=swap');
+
+body {
+  background: radial-gradient(circle at top, #0a0f1f, #070a13);
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* General Container */
+.homepage-container {
+  text-align: center;
+  padding: 30px;
+}
+
+/* Navbar */
+.homepage-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #0a0f1f, #162447);
+  padding: 15px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 28px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+}
+
+.login-button {
+  background: #ff0000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.login-button:hover {
+  background: #ff4d4d;
+}
+
+/* Hero Section */
+.homepage-header {
+  background: linear-gradient(to right, #0a0f1f, #162447);
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.15);
+}
+
+.header-button {
+  background: #ff0000;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.header-button:hover {
+  background: #ff4d4d;
+}
+
+/* Feature Section */
+.features {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+  white-space: nowrap;
+}
+
+.feature-grid {
+  display: flex;
+  gap: 20px;
+  animation: marquee 15s linear forwards;
+  animation-iteration-count: 1; /* Stops after one cycle */
+}
+
+.feature-card {
+  background: linear-gradient(135deg, #12172b, #1b1f38);
+  padding: 20px;
+  border-radius: 14px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.2);
+}
+
+.feature-button {
+  background: #ff0000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.feature-button:hover {
+  background: #ff4d4d;
+}
+
+/* Continuous Scrolling Animation (Stops after one loop) */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* AI Workouts, Chatbot, and Subscription Sections */
+.ai-workouts-section,
+.chatbot-section,
+.subscription {
+  background: #12172b;
+  padding: 40px;
+  border-radius: 14px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.25);
+}
+
+.ai-workout-button,
+.chatbot-button,
+.subscribe-button {
+  background: #ff0000;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.ai-workout-button:hover,
+.chatbot-button:hover,
+.subscribe-button:hover {
+  background: #ff4d4d;
+}
+
+/* Footer */
+.homepage-footer {
+  background: #0a0f1f;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.2);
+  text-align: center;
+}
+
+.footer-content a {
+  color: #ff4d4d;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Improved Buttons */
+.improved-button {
+  background: linear-gradient(135deg, #ff4d4d, #ff0000);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.3);
+}
+
+.explore-button {
+  background-color: #ff6b35; /* Unique vibrant color */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+
+.explore-button:hover {
+  background-color: #e65c2a;
+}
+/* Community Hub Button (Styled to Match Website) */
+.askai-button {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: #ff6b35; /* 🔥 Matching the theme */
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.askai-button:hover {
+  background: #e65c2a; /* Slightly darker on hover */
+  transform: scale(1.05);
+}

@@ -1,0 +1,117 @@
+/* ProfilePage.css */
+
+/* General Page Styling */
+.profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(20, 20, 30, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Title */
+  .profile-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #00bcd4;
+  }
+  
+  /* Profile Section */
+  .profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #00bcd4, #008ba3);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .avatar:hover {
+    transform: scale(1.1);
+  }
+  
+  .profile-info {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  /* Sections */
+  .subscription-section,
+  .progress-section,
+  .chatbot-section,
+  .fitness-goals-section,
+  .favorite-workouts-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .subscription-section:hover,
+  .progress-section:hover,
+  .chatbot-section:hover,
+  .fitness-goals-section:hover,
+  .favorite-workouts-section:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  /* Buttons */
+  button {
+    background: linear-gradient(135deg, #00bcd4, #008ba3);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #008ba3, #00bcd4);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 188, 212, 0.4);
+  }
+  
+  /* Logout Button */
+  .logout-button {
+    background: linear-gradient(135deg, #ff5252, #d32f2f);
+    margin-top: 20px;
+  }
+  
+  .logout-button:hover {
+    background: linear-gradient(135deg, #d32f2f, #ff5252);
+  }
+  
+  /* Login Message */
+  .login-message {
+    font-size: 18px;
+    color: #ff5252;
+    margin-top: 20px;
+  }
+  

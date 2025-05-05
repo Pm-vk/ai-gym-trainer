@@ -1,0 +1,77 @@
+.fatloss-container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #0d1b2a;
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.fatloss-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff5733;
+}
+
+.fatloss-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.tips-section {
+    background-color: #1b263b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
+}
+
+.tips-title {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+.tips-list {
+    text-align: left;
+    font-size: 1.2rem;
+    list-style-type: "🔥 ";
+    padding-left: 20px;
+}
+
+.video-section {
+    margin-top: 20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.fatloss-video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: #1b263b;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background: #ffaa00;
+}

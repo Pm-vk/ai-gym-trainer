@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #ffffff;
+  }
+  
+  .homepage-container {
+    text-align: center;
+  }
+  
+  /* Navbar */
+  .homepage-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #111;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+  .login-button {
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section */
+  .homepage-header {
+    background: url('/images/hero-bg.jpg') no-repeat center center/cover;
+    padding: 80px 20px;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .header-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background-color: #ffcc00;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 50px 20px;
+  }
+  
+  .feature-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    width: 250px;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .feature-button {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #ffcc00;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  /* Fitness Challenges & Transformation Stories */
+  .challenges-stories-container {
+    padding: 50px 20px;
+    background-color: #161616;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 900px;
+  }
+  
+  .category-title {
+    font-size: 22px;
+    color: #4CAF50;
+    margin-top: 20px;
+  }
+  
+  .challenge-list,
+  .transformation-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .challenge-card,
+  .transformation-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .transformation-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .join-challenge {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #ff5733;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Subscription & Chatbot Section */
+  .subscription,
+  .chatbot-section {
+    padding: 40px 20px;
+    background-color: #222;
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+  
+  .subscribe-button,
+  .chatbot-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  /* Footer */
+  .homepage-footer {
+    background: #111;
+    padding: 20px;
+  }
+  
+  .footer-content a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
