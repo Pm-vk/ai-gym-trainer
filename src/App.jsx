@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./components/Homepage";
+import Homepage from "./components/Homepage";
 import WorkoutPlans from "./components/WorkoutPlans";
 import NutritionGuide from "./components/NutritionGuide";
 import UserDashboard from "./components/UserDashboard";
@@ -30,19 +30,17 @@ const App = () => {
       <Chatbot />
 
       <Routes>
-        <Route path="/HomePage" element={<HomePage />} />
+        <Route path="/" element={<Homepage />} /> {/* ✅ Added this route to fix the error */}
+        <Route path="/Homepage" element={<Homepage />} />
         <Route path="/workouts" element={<WorkoutPlans />} />
         <Route path="/nutrition" element={<NutritionGuide />} />
         <Route path="/progress" element={<UserDashboard />} />
         <Route path="/exercises" element={<ExerciseDemo />} />
         <Route path="/subscribe" element={<SubscriptionPlans />} />
         <Route path="/auth" element={<Auth />} />
-        <Route path="/login" element={<Login setUser={setUser} />} />{" "}
-        {/* ✅ Pass setUser */}
-        <Route path="/signup" element={<Signup setUser={setUser} />} />{" "}
-        {/* ✅ Pass setUser */}
-        <Route path="/profile" element={<ProfilePage user={user} />} />{" "}
-        {/* ✅ Pass user */}
+        <Route path="/login" element={<Login setUser={setUser} />} /> {/* ✅ Pass setUser */}
+        <Route path="/signup" element={<Signup setUser={setUser} />} /> {/* ✅ Pass setUser */}
+        <Route path="/profile" element={<ProfilePage user={user} />} /> {/* ✅ Pass user */}
         <Route path="/muscle-gain" element={<MuscleGain />} />
         <Route path="/fat-loss" element={<FatLoss />} /> {/* Add this route */}
         <Route

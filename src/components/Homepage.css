@@ -165,6 +165,7 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+
 /* Improved Buttons */
 .improved-button {
   background: linear-gradient(135deg, #ff4d4d, #ff0000);
@@ -193,6 +194,7 @@ body {
 .explore-button:hover {
   background-color: #e65c2a;
 }
+
 /* Community Hub Button (Styled to Match Website) */
 .askai-button {
   display: inline-block;
