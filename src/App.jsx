@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./components/Homepage";
+import Homepage from "./components/Homepage";
 import WorkoutPlans from "./components/WorkoutPlans";
 import NutritionGuide from "./components/NutritionGuide";
 import UserDashboard from "./components/UserDashboard";
@@ -30,7 +30,7 @@ const App = () => {
       <Chatbot /> 
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/Homepage" element ={<Homepage />} />
         <Route path="/workouts" element={<WorkoutPlans />} />
         <Route path="/nutrition" element={<NutritionGuide />} />
         <Route path="/progress" element={<UserDashboard />} />
