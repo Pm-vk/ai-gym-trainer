@@ -30,7 +30,7 @@ const App = () => {
       <Chatbot />
 
       <Routes>
-        <Route path="/" element={<Homepage />} /> {/* ✅ Added this route to fix the error */}
+        <Route path="/" element={<HomePage />} /> {/* ✅ Added this route to fix the error */}
         <Route path="/Homepage" element={<Homepage />} />
         <Route path="/workouts" element={<WorkoutPlans />} />
         <Route path="/nutrition" element={<NutritionGuide />} />
