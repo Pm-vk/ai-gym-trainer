@@ -1,8 +1,8 @@
 import React from "react";
-import "./Homepage.css";
+import './HomePage.css'; 
 import { Link } from "react-router-dom";
 
-const Homepage = () => {
+const HomePage = () => {
   return (
     <div className="homepage-container">
       {/* Navbar */}
@@ -85,5 +85,5 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default HomePage;
 

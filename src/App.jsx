@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Homepage from "./components/Homepage";
+import HomePage from "./components/Homepage";
 import WorkoutPlans from "./components/WorkoutPlans";
 import NutritionGuide from "./components/NutritionGuide";
 import UserDashboard from "./components/UserDashboard";
@@ -27,29 +27,38 @@ const App = () => {
   return (
     <Router>
       {/* Chatbot will be accessible on every page */}
-      <Chatbot /> 
+      <Chatbot />
 
       <Routes>
-        <Route path="/Homepage" element ={<Homepage />} />
+        <Route path="/HomePage" element={<HomePage />} />
         <Route path="/workouts" element={<WorkoutPlans />} />
         <Route path="/nutrition" element={<NutritionGuide />} />
         <Route path="/progress" element={<UserDashboard />} />
         <Route path="/exercises" element={<ExerciseDemo />} />
         <Route path="/subscribe" element={<SubscriptionPlans />} />
         <Route path="/auth" element={<Auth />} />
-        <Route path="/login" element={<Login setUser={setUser} />} /> {/* ✅ Pass setUser */}
-        <Route path="/signup" element={<Signup setUser={setUser} />} /> {/* ✅ Pass setUser */}
-        <Route path="/profile" element={<ProfilePage user={user} />} /> {/* ✅ Pass user */}
+        <Route path="/login" element={<Login setUser={setUser} />} />{" "}
+        {/* ✅ Pass setUser */}
+        <Route path="/signup" element={<Signup setUser={setUser} />} />{" "}
+        {/* ✅ Pass setUser */}
+        <Route path="/profile" element={<ProfilePage user={user} />} />{" "}
+        {/* ✅ Pass user */}
         <Route path="/muscle-gain" element={<MuscleGain />} />
         <Route path="/fat-loss" element={<FatLoss />} /> {/* Add this route */}
-        <Route path="/workout-details/athletic-performance" element={<AthleticPerformance />} />
+        <Route
+          path="/workout-details/athletic-performance"
+          element={<AthleticPerformance />}
+        />
         <Route path="/subscribe/free" element={<FreePlan />} />
         <Route path="/subscribe/basic" element={<BasicPlan />} />
         <Route path="/subscribe/premium" element={<PremiumPlan />} />
-        <Route path="/challenges-and-stories" element={<ChallengesAndStories />} />
+        <Route
+          path="/challenges-and-stories"
+          element={<ChallengesAndStories />}
+        />
         <Route path="/askai" element={<AskAI />} /> {/* 🔥 New Route */}
         <Route path="/signup" element={<Signup setUser={setUser} />} />
-        <Route path="/challenges/1" element={<PushupChallenge />} />     
+        <Route path="/challenges/1" element={<PushupChallenge />} />
       </Routes>
     </Router>
   );
