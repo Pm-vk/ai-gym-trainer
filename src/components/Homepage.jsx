@@ -1,5 +1,5 @@
 import React from "react";
-import './Homepage.css'; 
+import './HomePage.css';  // Ensure that this CSS file is named HomePage.css
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
